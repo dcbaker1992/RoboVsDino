@@ -1,11 +1,13 @@
-import dinosaur
 from herd import Herd
 from fleet import Fleet
 
 
 class Battlefield:
-
     def __init__(self):
-        self.herd = Herd()
-        self.fleet = Fleet()
+        self.dinosaur_herd = Herd()
+        self.robot_fleet = Fleet()
+        self.robot_defeated = []
+        self.dinosaurs_defeated = []
 
+
+print('Welcome to Dinosaurs Vs Robots!')

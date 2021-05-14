@@ -1,14 +1,13 @@
-from attack_type import Attack_type
+
 
 class Dinosaur:
-    def __init__(self, type):
+    def __init__(self, type, attack_power):
         self.type = type
-        self.energy = -10
+        self.energy = 20
+        self.attack_power = int(attack_power)
         self.health = 100
-        self.attack_type = [Attack_type("Claw Slash", 15),
-                            Attack_type("Chomp", 30),
-                            Attack_type("Maul", 25)]
 
 
-
-
+    def attack_robot(self, robot):
+        robot.health -= self.attack_power
+        self.energy -= 4
